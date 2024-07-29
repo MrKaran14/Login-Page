@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.wlcm-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /* Changed from 50% to 0% */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Removed translateY */
+}
+
+.wlcmtxt {
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(to left, #e3e1da, #f0efed, #fffefc);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.cssanimation,
+.cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span {
+    display: inline-block
+}
+
+.leJoltZoom span {
+    animation-name: leJoltZoom
+}
+
+@keyframes leJoltZoom {
+    10% {
+        font-size: 140%
+    }
+
+    40% {
+        font-size: 80%
+    }
+
+    100% {
+        font-size: 100%
+    }
+}
+
+.img-con {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url('https://w0.peakpx.com/wallpaper/333/666/HD-wallpaper-you-can-now-try-midjourney-the-ai-%E2%80%8B%E2%80%8Bto-generate-high-quality-art-tech-update.jpg');
+}
+
+.login-card {
+    padding: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: auto;
+    width: 500px;
+    border: 0px solid white;
+    backdrop-filter: blur(20px);
+}
+
+.hed {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    font-family: "Arial";
+}
+
+.input-container {
+    position: relative;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.inp-box {
+    padding: 10px 10px 10px 40px;
+    /* Add space for the left icon */
+    border: none;
+    /* Reset all borders */
+    border-bottom: 3px solid white;
+    /* Add bottom border */
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    /* Text color */
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    /* Icon color */
+    font-size: 20px;
+    /* Icon size */
+}
+
+.input-container i.fa-user,
+.input-container i.fa-lock {
+    left: 10px;
+}
+
+.toggle-password {
+    right: 10px;
+    cursor: pointer;
+}
+
+.inp-box::-webkit-input-placeholder {
+    font-weight: 700;
+    font-family: Arial;
+    color: white;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.fog-pswrd {
+    color: white;
+}
+
+.login-butn {
+    border-width: 0px;
+    font-weight: 700;
+    font-family: Arial;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    height: 40px;
+    width: 80%;
+}
+
+.login-butn2 {
+    border-width: 0px;
+    font-weight: 700;
+    font-family: Arial;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    height: 40px;
+    width: 80%;
+}
+
+.icn {
+    height: 18px;
+}
+
+.quiztxt {
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+@media (max-width: 576px) {
+    .wlcmtxt {
+        font-size: 25px;
+    }
+
+    .img-con {
+        height: 100vh;
+    }
+
+    .login-card {
+        width: 80%;
+        height: auto;
+        border: 0px solid white;
+        border-radius: 25px;
+        backdrop-filter: blur(30px);
+    }
+
+    .hed {
+        font-size: 25px;
+    }
+
+    input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+
+    .input-container {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .inp-box {
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid white;
+    }
+
+    .input-container i {
+        font-size: 15px;
+    }
+
+    .toggle-password {
+        right: 10px;
+        font-size: 15px;
+    }
+
+    .fog-pswrd {
+        font-size: 10px;
+    }
+
+    .login-butn {
+        padding: 7px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .login-butn2 {
+        padding: 7px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .quiztxt {
+        font-size: 12px;
+    }
+}
